@@ -89,7 +89,6 @@
   justify-content: center;
   align-items: flex-start;
   padding-left: 5%;
-  /* border: 1px solid red; */
 }
 
 #track-artist {
@@ -112,7 +111,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* border: 1px solid red; */
 }
 
 .progress-bar {
@@ -120,7 +118,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid red; */
 }
 
 #progressBar {
