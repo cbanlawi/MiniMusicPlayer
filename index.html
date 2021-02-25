@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/6f917e9db0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mini Music Player</title>
+  </head>
+
+  <body>
+    <div class="outer-container">
+      <img
+        src="images/HarryStylesAlbumCover.jpg"
+        alt="Harry Styles' Fine Line album cover"
+        id="background"
+      />
+      <audio src="tracks/HarryStyles-WatermelonSugar.mp3" id="track"></audio>
+    </div>
+
+    <div class="player-container">
+      <img
+        src="images/HarryStylesAlbumCover.jpg"
+        alt="Harry Styles' Fine Line album cover"
+        id="thumbnail"
+      />
+
+      <div class="box">
+        <div class="play-pause">
+          <i class="far fa-play-circle fa-3x" id="play"></i>
+          <i class="far fa-pause-circle fa-3x" id="pause"></i>
+        </div>
+        <div class="track-info">
+          <div id="track-artist">Harry Styles</div>
+          <div id="track-title">Watermelon Sugar</div>
+        </div>
+        <div class="next-prev">
+          <i class="far fa-arrow-alt-circle-left fa-2x" id="prev-track"></i>
+          <i class="far fa-arrow-alt-circle-right fa-2x" id="next-track"></i>
+        </div>
+        <div class="progress-bar">
+          <input type="range" id="progressBar" min="0" max="" value="0" />
+        </div>
+        <div class="track-time">
+            <div id="currentTime"></div>
+            <div id="durationTime"></div>
+        </div>
+      </div>
+    </div> <!-- player-container end -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
